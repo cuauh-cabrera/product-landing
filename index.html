@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
     <title>Product Landing</title>
 </head>
+
 <body>
-    
+    <!--HEADER-->
+    <header id="header">
+        <img id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"><img>
+        <nav id="nav-bar">
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#works">How it works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </nav>
+    </header>
+    <!--CONTACT FORM-->
+    <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <h1 class="form-title">Handcrafted, home-made masterpieces</h1>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" required></input>
+        <input id="submit" type="submit" value="GET STARTED"></input>
+    </form>
+    <!--FEATURES-->
+    <section id="features" class="features">
+        <div class="features__materials">
+            <h2>Premium Materials</h2>
+            <img src="./assets/fire.png" alt="materials icon">
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+                purchase.</p>
+        </div>
+        <div class="features__shipping">
+            <h2>Fast Shipping</h2>
+            <img src="./assets/shipping.png" alt="shipping icon">
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+                returns if you are not satisfied.</p>
+        </div>
+        <div class="features__qa">
+            <h2>Quality Assurance</h2>
+            <img src="./assets/batery.png" alt="quality assurance logo">
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
+                pitch of your instrument.</p>
+        </div>
+    </section>
+    <!--WORKS-->
+    <section id="works" class="works">
+        <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0"
+            frameborder="0" allowfullscreen="true"></iframe>
+    </section>
+    <!--PRICING-->
+    <section id="pricing" class="price">
+        <div class="price__tenor">
+            <h3>TENOR TROMBONE</h3>
+            <h4>$600</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quas?</p>
+            <button>SELECT</button>
+        </div>
+        <div class="price__bass">
+            <h3>BASS TROMBONE</h3>
+            <h4>$900</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eum?</p>
+            <button type="button">SELECT</button>
+        </div>
+        <div class="price__valve">
+            <h3>VALVE TROMBONE</h3>
+            <h4>$1200</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, excepturi!</p>
+            <button type="button">SELECT</button>
+        </div>
+    </section>
 </body>
+<!--FOOTER-->
+<footer>
+    <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>Copyright 2016, Original Trombones</p>
+</footer>
+
 </html>
